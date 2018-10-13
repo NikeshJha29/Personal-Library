@@ -1,0 +1,111 @@
+<style type="text/css">
+    li {
+ display: block;
+ transition-duration: 0.5s;
+}
+li:hover {
+  cursor: pointer;
+}
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul li ul li:hover > ul,
+ul li,ul li ul li ul li:focus-within > ul,
+ul li ul li ul :hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul li ul li ul li {
+  clear: both;
+  width: 100%;
+
+}
+a {
+  text-decoration: none;
+}
+nav {
+    font-family: monospace;
+    padding-top:  35px;
+
+}
+
+ul {
+  background: gray;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+li {
+    color: white;
+  background: darkgray;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #fff;
+}
+
+li:hover {
+    background: gray;
+    cursor: pointer;
+}
+
+ul li ul ul li{
+    background: gray;
+    visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+    position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+    left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul, /* this is the line we add */
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+    clear: both;
+  width: 100%;
+}

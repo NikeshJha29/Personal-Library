@@ -1,0 +1,28 @@
+table th, td{
+   border: 1px solid black;
+   text-align:center;
+}
+th,td{
+ padding:15px;
+
+}
+table{
+ border-collapse:collapse;
+ width:100%;
+}
+table td a{
+ background-color: #00e6e6;
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+th{
+ padding:20px;
+ background:#708090;
+ font-size:25px;
+ font-weight:bold;
+}
